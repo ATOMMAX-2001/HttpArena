@@ -58,7 +58,7 @@ def json_test(req, resp):
 if __name__ == "__main__":
     app.serve(
         host="0.0.0.0",
-        port=8081,
+        port=8443,
         static_path="/data/static",
         https=SlimeTls(cert="/certs/server.crt ", key="/certs/server.key"),
     )

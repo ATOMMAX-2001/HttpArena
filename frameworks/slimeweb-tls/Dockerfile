@@ -11,6 +11,6 @@ WORKDIR /app/arena
 
 COPY main.py /app/arena/main.py
 
-EXPOSE 8081
+EXPOSE 8443
 
 CMD ["slime","run","main.py"]

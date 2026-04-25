@@ -6,6 +6,6 @@
   "description": "SlimeWeb is a fast lightweight framework for python powered by rust",
   "repo": "https://github.com/ATOMMAX-2001/Slime/",
   "enabled": true,
-  "tests": ["json-tls", "baseline-h2", "static-h2"],
+  "tests": ["baseline-h2", "static-h2"],
   "maintainers": ["ATOMMAX-2001"]
 }
