@@ -135,7 +135,7 @@ async def init():
         DB_POOL = await pg.create_pool(
             dsn=os.environ["DATABASE_URL"],
             min_size=5,
-            max_size=int(os.environ.get("DATABASE_MAX_CONN", 256)),
+            max_size=int(os.environ.get("DATABASE_MAX_CONN", 256)) // 2,
             connection_class=NoResetConnection,
         )
         print("Pool is created successfully")
